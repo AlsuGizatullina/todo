@@ -1,0 +1,11 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platforms: postgres
+    url: jdbc:postgresql://localhost:5432/todo_service_db
+    username: postgres
+    password: root
+    driver-class_name: org.postgresql.Driver
