@@ -1,4 +1,4 @@
-package ru.alsu.todo.dto;
+package ru.alsu.todo.dto.board;
 
 import lombok.Data;
 import ru.alsu.todo.model.Task;

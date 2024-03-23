@@ -1,4 +1,4 @@
-package ru.alsu.todo.dto;
+package ru.alsu.todo.dto.task;
 
 import lombok.Data;
 

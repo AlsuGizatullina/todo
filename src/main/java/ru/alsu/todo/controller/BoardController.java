@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import ru.alsu.todo.dto.BoardRequestDTO;
-import ru.alsu.todo.dto.BoardResponseDTO;
-import ru.alsu.todo.dto.BoardViewResponseDTO;
-import ru.alsu.todo.dto.BoardWithTasksResponseDTO;
+import ru.alsu.todo.dto.board.BoardRequestDTO;
+import ru.alsu.todo.dto.board.BoardResponseDTO;
+import ru.alsu.todo.dto.board.BoardViewResponseDTO;
+import ru.alsu.todo.dto.board.BoardWithTasksResponseDTO;
 import ru.alsu.todo.mapper.BoardMapper;
 import ru.alsu.todo.model.Board;
 import ru.alsu.todo.service.BoardService;
@@ -29,7 +29,7 @@ public class BoardController {
 
     @PostMapping
     private BoardResponseDTO create(@RequestBody BoardRequestDTO boardRequestDTO){
-        Board board = boardService.save(boardMapper.toEntity(boardRequestDTO));
+        Board board = boardService.create(boardMapper.toEntity(boardRequestDTO));
         return boardMapper.toResponse(board);
     }
 

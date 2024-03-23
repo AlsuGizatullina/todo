@@ -1,6 +1,7 @@
-package ru.alsu.todo.dto;
+package ru.alsu.todo.dto.board;
 
 import lombok.Data;
+import ru.alsu.todo.dto.task.TaskResponseDTO;
 
 import java.util.List;
 

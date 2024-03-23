@@ -3,8 +3,8 @@ package ru.alsu.todo.mapper;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;
-import ru.alsu.todo.dto.TaskRequestDTO;
-import ru.alsu.todo.dto.TaskResponseDTO;
+import ru.alsu.todo.dto.task.TaskRequestDTO;
+import ru.alsu.todo.dto.task.TaskResponseDTO;
 import ru.alsu.todo.model.Task;
 
 import java.util.List;
